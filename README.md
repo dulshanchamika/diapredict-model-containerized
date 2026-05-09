@@ -36,7 +36,6 @@ You can view the interactive API docs at `http://localhost:8000/docs`.
 ### 4. Running Tests
 Install testing dependencies and run `pytest`:
 ```bash
-pip install pytest httpx
 pytest test_main.py -v
 ```
 
