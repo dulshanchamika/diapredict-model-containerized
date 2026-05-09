@@ -3,5 +3,3 @@ uvicorn[standard]
 scikit-learn
 pandas
 joblib
-pytest
-httpx
