@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: diabetes-api
-        image: dulshanchamika/diapredict-model:v1
+        image: dulshanchamika/diapredict-model:v3
         ports:
         - containerPort: 8000
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         # 1. Resource Management (Crucial for ML)
         resources:
           requests:
