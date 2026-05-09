@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaPredict | Premium Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="logo">Dia<span>Predict</span></h1>
+            <p class="subtitle">Advanced ML-powered health diagnostics</p>
+        </header>
+
+        <section class="card glass">
+            <div class="card-content">
+                <form id="prediction-form">
+                    <div class="input-grid">
+                        <div class="form-group">
+                            <label for="Pregnancies">Pregnancies</label>
+                            <input type="number" id="Pregnancies" name="Pregnancies" required min="0" placeholder="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="Glucose">Glucose Level</label>
+                            <input type="number" id="Glucose" name="Glucose" required step="0.1" placeholder="mg/dL">
+                        </div>
+                        <div class="form-group">
+                            <label for="BloodPressure">Blood Pressure</label>
+                            <input type="number" id="BloodPressure" name="BloodPressure" required step="0.1" placeholder="mmHg">
+                        </div>
+                        <div class="form-group">
+                            <label for="BMI">BMI</label>
+                            <input type="number" id="BMI" name="BMI" required step="0.1" placeholder="kg/m²">
+                        </div>
+                        <div class="form-group">
+                            <label for="Age">Age</label>
+                            <input type="number" id="Age" name="Age" required min="0" placeholder="Years">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-predict">
+                        <span>Analyze Health Data</span>
+                        <div class="loader" id="loader"></div>
+                    </button>
+                </form>
+
+                <div id="result-container" class="result-container hidden">
+                    <div class="result-content">
+                        <div id="result-icon" class="result-icon"></div>
+                        <h2 id="result-title">Analyzing...</h2>
+                        <p id="result-desc"></p>
+                        <button class="btn-reset" onclick="resetForm()">New Analysis</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 DiaPredict AI. For informational purposes only.</p>
+        </footer>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
