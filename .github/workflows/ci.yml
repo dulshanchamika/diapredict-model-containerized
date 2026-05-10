@@ -81,7 +81,7 @@ jobs:
           echo "$KUBECONFIG_CONTENT" > ~/.kube/config
           
           # Update the deployment file to use the specific image SHA
-          sed -i 's|image: dulshanchamika/diapredict-model:v1|image: dulshanchamika/diapredict-model:${{ github.sha }}|' k8s-deploy.yml
+          sed -i 's|image: dulshanchamika/diapredict-model:v3|image: dulshanchamika/diapredict-model:${{ github.sha }}|' k8s-deploy.yml
           
           # Apply the deployment
           kubectl apply -f k8s-deploy.yml
