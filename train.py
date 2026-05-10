@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import joblib
 
-# Load dataset from a working source (Kaggle/hosted)
 url = "https://raw.githubusercontent.com/plotly/datasets/master/diabetes.csv"
 df = pd.read_csv(url)
 
