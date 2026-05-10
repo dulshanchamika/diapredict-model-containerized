@@ -1,4 +1,4 @@
-# Diabetes Prediction Model API
+# End-to-End Diabetes Prediction Web Application (MLOps)
 
 A complete Machine Learning application that predicts the likelihood of diabetes based on medical predictor variables. It includes a pre-trained Random Forest model, a FastAPI backend, a web-based user interface, Docker containerization, Kubernetes deployment configurations, and a full CI/CD pipeline using GitHub Actions.
 
